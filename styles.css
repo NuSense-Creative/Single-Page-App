@@ -1,0 +1,92 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, royalblue, lightblue);
+    padding: 20px;
+    margin: 0; /* Remove any default margin */
+    min-height: 100vh; /* Ensure the background covers the full screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+/* Header and Logo Styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logo {
+    margin-top: 3rem;
+    width: 550px; /* Adjust the size of the logo */
+    margin-bottom: 20px; /* Adds space below the logo */
+}
+
+/* Title Styles */
+h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Button Container Styles */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffb347;
+}
+
+/* Flex Container for Pokémon Information */
+.pokemon-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between Pokémon containers */
+}
+
+/* Pokémon Container Styles */
+.pokemon-container {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center content inside the containers */
+}
+
+.pokemon-container img {
+    max-width: 150px;
+    margin: 10px 0;
+}
+
+.pokemon-container h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pokemon-container p {
+    font-size: 18px;
+    color: #666;
+}
