@@ -16,10 +16,6 @@ function loadPokemonData(url, containerId) {
         .catch(error => console.error('Error:', error));
 }
 
-document.getElementById('startExploring').addEventListener('click', () => {
-    document.getElementById('pokemonExplorer').scrollIntoView({ behavior: 'smooth' });
-});
-
 // Event listeners for each button
 document.getElementById('loadCharizard').addEventListener('click', () => {
     loadPokemonData('https://pokeapi.co/api/v2/pokemon/charizard', 'charizardContainer');
