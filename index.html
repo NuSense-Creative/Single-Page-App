@@ -7,30 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Logo Section -->
-    <header>
-        <img src="/assets/Pokemon-Logo-PNG4.png" alt="Logo" id="logo">
+    <header class="hero">
+        <img src="/assets/Pokemon-Logo-PNG4.png" alt="Pokémon Logo" id="logo">
+        <h1>Discover Your Favorite Pokémon</h1>
+        <p>
+            Explore iconic Pokémon, view their abilities, and start your adventure in one click.
+        </p>
+        <button id="startExploring">Start Exploring</button>
     </header>
 
-    <h1>Pokémon Information</h1>
+    <main id="pokemonExplorer" class="explorer">
+        <h2>Pokémon Explorer</h2>
 
-    <!-- Buttons to Load Pokémon Data -->
-    <div class="buttons-container">
-        <button id="loadCharizard">Load Charizard</button>
-        <button id="loadPikachu">Load Pikachu</button>
-        <button id="loadBulbasaur">Load Bulbasaur</button>
-        <button id="loadSquirtle">Load Squirtle</button>
-        <button id="loadEevee">Load Eevee</button>
-    </div>
+        <div class="buttons-container">
+            <button id="loadCharizard">Load Charizard</button>
+            <button id="loadPikachu">Load Pikachu</button>
+            <button id="loadBulbasaur">Load Bulbasaur</button>
+            <button id="loadSquirtle">Load Squirtle</button>
+            <button id="loadEevee">Load Eevee</button>
+        </div>
 
-    <!-- Flex Container for Pokémon Information -->
-    <div class="pokemon-info-container">
-        <div id="charizardContainer" class="pokemon-container"></div>
-        <div id="pikachuContainer" class="pokemon-container"></div>
-        <div id="bulbasaurContainer" class="pokemon-container"></div>
-        <div id="squirtleContainer" class="pokemon-container"></div>
-        <div id="eeveeContainer" class="pokemon-container"></div>
-    </div>
+        <div class="pokemon-info-container">
+            <div id="charizardContainer" class="pokemon-container"></div>
+            <div id="pikachuContainer" class="pokemon-container"></div>
+            <div id="bulbasaurContainer" class="pokemon-container"></div>
+            <div id="squirtleContainer" class="pokemon-container"></div>
+            <div id="eeveeContainer" class="pokemon-container"></div>
+        </div>
+    </main>
 
     <script src="app.js"></script>
 </body>

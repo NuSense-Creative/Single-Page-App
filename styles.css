@@ -1,46 +1,41 @@
-/* General Page Styles */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background: linear-gradient(135deg, royalblue, lightblue);
-    padding: 20px;
     margin: 0; /* Remove any default margin */
     min-height: 100vh; /* Ensure the background covers the full screen */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    text-align: center;
+    background: linear-gradient(135deg, #2a4cff, #78c6ff);
+    color: #fff;
 }
 
-/* Header and Logo Styles */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.hero {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px 24px;
 }
 
 #logo {
-    margin-top: 3rem;
-    width: 550px; /* Adjust the size of the logo */
-    margin-bottom: 20px; /* Adds space below the logo */
+    width: min(550px, 95%);
+    margin: 0 0 14px;
 }
 
-/* Title Styles */
-h1 {
-    color: #fff;
-    font-size: 36px;
-    margin-bottom: 20px;
+.hero h1 {
+    font-size: clamp(32px, 5vw, 50px);
+    margin: 0 0 10px;
 }
 
-/* Button Container Styles */
-.buttons-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Space between buttons */
-    margin-bottom: 30px;
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 22px;
+    line-height: 1.45;
 }
 
-/* Button Styles */
+.explorer {
+    background: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 28px 16px 36px;
+}
+
 button {
     background-color: orange;
     color: white;
@@ -56,15 +51,28 @@ button:hover {
     background-color: #ffb347;
 }
 
-/* Flex Container for Pokémon Information */
+.explorer h2 {
+    margin: 0 0 18px;
+    font-size: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
 .pokemon-info-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; /* Space between Pokémon containers */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Pokémon Container Styles */
 .pokemon-container {
     background-color: white;
     border: 2px solid #ddd;
@@ -89,4 +97,14 @@ button:hover {
 .pokemon-container p {
     font-size: 18px;
     color: #666;
+}
+
+@media (max-width: 700px) {
+    .hero p {
+        font-size: 18px;
+    }
+
+    .explorer h2 {
+        font-size: 26px;
+    }
 }
