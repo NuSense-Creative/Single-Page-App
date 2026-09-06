@@ -20,15 +20,17 @@ const explorerSection = document.getElementById('pokemonExplorer');
 const explorerLink = document.querySelector('a[href="#pokemonExplorer"]');
 
 function focusExplorerFromHash() {
-    if (window.location.hash === '#pokemonExplorer') {
+    if (explorerSection && window.location.hash === '#pokemonExplorer') {
         explorerSection.focus();
     }
 }
 
-window.addEventListener('hashchange', focusExplorerFromHash);
-explorerLink.addEventListener('click', () => {
-    setTimeout(focusExplorerFromHash, 0);
-});
+if (explorerSection && explorerLink) {
+    window.addEventListener('hashchange', focusExplorerFromHash);
+    explorerLink.addEventListener('click', () => {
+        setTimeout(focusExplorerFromHash, 0);
+    });
+}
 
 // Event listeners for each button
 document.getElementById('loadCharizard').addEventListener('click', () => {
